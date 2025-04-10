@@ -1,1 +1,108 @@
-nanu dhenggabettaru akshay ni
+git init
+Initialized empty Git repository in C:/Users/AKSHAY MORTHAD/Desktop/test3/.git/
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git add .
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git commit -m "first commit"
+[main (root-commit) 9a7354f] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 h.txt
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git branch -M main
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git remote add origin https://github.com/akshaymorthad/test3.git
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 230.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/akshaymorthad/test3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git branch branch3
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
+$ git switch branch3
+Switched to branch 'branch3'
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git add .
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git commit -m "g"
+On branch branch3
+nothing to commit, working tree clean
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git push
+fatal: The current branch branch3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch3
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git push --set-upstream origin branch3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'branch3' on GitHub by visiting:
+remote:      https://github.com/akshaymorthad/test3/pull/new/branch3
+remote:
+To https://github.com/akshaymorthad/test3.git
+ * [new branch]      branch3 -> branch3
+branch 'branch3' set up to track 'origin/branch3'.
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 918 bytes | 76.00 KiB/s, done.
+From https://github.com/akshaymorthad/test3
+ * branch            main       -> FETCH_HEAD
+   9a7354f..9cc9beb  main       -> origin/main
+Updating 9a7354f..9cc9beb
+Fast-forward
+ h.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git switch main
+error: Your local changes to the following files would be overwritten by checkout:
+        h.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git commit -m "cha"
+On branch branch3
+Your branch is ahead of 'origin/branch3' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   h.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$ git switch main
+error: Your local changes to the following files would be overwritten by checkout:
+        h.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+$
