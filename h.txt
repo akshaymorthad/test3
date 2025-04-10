@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
 $ git init
+=======
+git init
+>>>>>>> fc13c125bb30a338c70ba7cdf05144150e9c62f2
 Initialized empty Git repository in C:/Users/AKSHAY MORTHAD/Desktop/test3/.git/
 
 AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (main)
@@ -107,6 +111,7 @@ Please commit your changes or stash them before you switch branches.
 Aborting
 
 AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
+<<<<<<< HEAD
 $ git add .
 
 AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/Desktop/test3 (branch3)
@@ -150,3 +155,6 @@ $ git switch main
 Switched to branch 'main'
 Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
   (use "git pull" to update your local branch)
+=======
+$
+>>>>>>> fc13c125bb30a338c70ba7cdf05144150e9c62f2
