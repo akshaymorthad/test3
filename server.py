@@ -4,4 +4,4 @@ app = Flask(__name__)
 def home():
 	return "Hello,World! This is a lightweight web server"
 if __name__ == '__main__':
-	app.run(host='0.0.0.0',port=8081)
+	app.run(host='0.0.0.0',port=5050)

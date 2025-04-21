@@ -158,3 +158,43 @@ Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
 =======
 $
 >>>>>>> fc13c125bb30a338c70ba7cdf05144150e9c62f2
+docker application cmds
+$ docker build -t minimal-webserver .
+[+] Building 12.4s (9/9) FINISHED                          docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 172B                                       0.0s
+ => [internal] load metadata for docker.io/library/python:3.9-alpine       1.4s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [1/4] FROM docker.io/library/python:3.9-alpine@sha256:c549d512f8a56f7  0.0s
+ => [internal] load build context                                          0.1s
+ => => transferring context: 230B                                          0.1s
+ => CACHED [2/4] WORKDIR /app                                              0.0s
+ => [3/4] COPY server.py /app/                                             0.0s
+ => [4/4] RUN pip install --no-cache-dir flask                            10.6s
+ => exporting to image                                                     0.2s
+ => => exporting layers                                                    0.2s
+ => => writing image sha256:3f77161c387aae132c57142434001be9393b9f30d63ae  0.0s
+ => => naming to docker.io/library/minimal-webserver                       0.0s
+
+AKSHAY MORTHAD@AKSHAYMORTHAD MINGW64 ~/desktop/test3 (main)
+$ docker run -p 5050:5050 minimal-webserver
+ * Serving Flask app 'server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://172.17.0.3:5050
+docker ps 
+docker ps -a 
+docker pull hello world 
+		busybox	
+		ngnix
+		MySQL
+docker images
+docker search container id
+docker rm  "
+docker rmi "
+docker start name 
+docker stop name
+docker pull
